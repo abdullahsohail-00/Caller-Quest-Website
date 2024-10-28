@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Removals - Caller Quest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="removals.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-5 animate-fade-in">
+            <img src="Images/logo black.png" alt="Caller Quest" height="40" class="mb-3">
+            <h1 class="display-4"></h1>
+        </header>
+
+        <nav class="mb-4 animate-slide-down">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" href="#"><i class="bi bi-person"></i> Name</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-telephone"></i> Phone</a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house"></i> Address</a></li>
+            </ul>
+        </nav>
+
+        <form class="mb-5 animate-slide-up">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="e.g Jhone Smith">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="City, State and Zip Code">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Free Search</button>
+        </form>
+
+        <main class="animate-fade-in">
+            <h2 class="mb-4">Removals</h2>
+            <p class="mb-4">To remove your record please follow these instructions EXACTLY.</p>
+            <ul class="mb-4">
+                <li>Agree to the terms and check the "I'm not a robot button"</li>
+                <li>Click the 'begin' button below.</li>
+                <li>Search for your record, click on the details button to bring up your record detail.</li>
+                <li>At the bottom of the record detail page click the 'remove this record' button. If you don't see that button you are either on the wrong page or your session expired (in which case start over here).</li>
+                <li>You will receive an email with a link, click on the link to confirm your removal request.</li>
+                <li>You are done. Your record will be removed everywhere on the site within 72 hours</li>
+            </ul>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="agreeTerms">
+                        <label class="form-check-label" for="agreeTerms">
+                            By checking this box I agree that I am the subject of the record I am requesting to be removed (i.e. it contains my name, address and/or phone numbers)
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary">Begin Removal</button>
+                </div>
+            </div>
+        </main>
+
+      
+        <footer class="bg-light py-4">
+            <div class="container">
+                <p class="text-center mb-0 animate__animated animate__fadeIn">&copy; 2023 CallerQuest.Info - People Search -
+                    Reverse Phone Lookup - Address Lookup</p>
+                <p class="text-center mt-2">
+                    <a href="#" class="footer-link mx-2">About</a>
+                    <a href="#" class="footer-link mx-2">Help</a>
+                    <a href="#" class="footer-link mx-2">Terms</a>
+                    <a href="#" class="footer-link mx-2">Privacy Policy</a>
+                    <a href="#" class="footer-link mx-2">Contact</a>
+                </p>
+                <p class="text-center mt-2">
+                    <a href="mailto:support@callerquest.info" class="footer-link">Support @callerquest.info</a>
+                </p>
+                <p class="text-center mt-2">
+                    <a href="#" class="footer-link">Do not Sell My Personal Information</a>
+                </p>
+                <p class="text-center small mt-3 animate__animated animate__fadeIn animate__delay-1s">CallerQuest.Info is
+                    not a Consumer Reporting Agency (CRA) as defined by the Fair Reporting Act (FCRA). This site can't be
+                    used for employment, credit or tenant screening, or any related purpose</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="removals.js"></script>
+</body>
+</html>
+

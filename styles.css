@@ -1,0 +1,165 @@
+.bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('Images/Header.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 50vh;
+    /* Adjust this value to control the height of the background image */
+    min-height: 300px;
+}
+
+.form-section {
+    margin-top: -150px;
+    /* Adjust this value to control how much the form overlaps */
+}
+
+.header-card {
+    background-color: white;
+    border: none;
+}
+
+.header-card .card-header {
+    background-color: #343a40;
+    border-bottom: none;
+}
+
+.header-card .nav-link {
+    color: #ffffff;
+    border: none;
+}
+
+.header-card .nav-link.active {
+    background-color: #ffffff;
+    color: #343a40;
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 0.75rem 1rem;
+}
+
+.btn-primary {
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.feature-box {
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-box:hover {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.feature-box:hover .bi {
+    color: #007bff;
+}
+
+.feature-box:hover h3 {
+    color: #007bff;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap');
+
+.feature-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    color: #007bff;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon {
+    transform: scale(1.2);
+}
+
+.feature-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.bg-primary {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+}
+
+/* Rest of your CSS styes... */
+
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+.footer-link {
+    color: #007bff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #007bff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    color: #0056b3;
+}
+
+.footer-link:hover::after {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+footer p {
+    transition: all 0.3s ease;
+}
+
+footer p:hover {
+    transform: translateY(-2px);
+}
+
+

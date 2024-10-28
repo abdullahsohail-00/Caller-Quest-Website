@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Caller Quest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="search-results.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="hero-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+                    <div class="logo-container text-center mb-4">
+                        <img src="Images/logo.png" alt="Caller Quest" height="40" class="logo">
+                        <span class="text-white h3 ms-2 align-middle"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container search-form-container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card search-card animate-in">
+                    <div class="card-header bg-dark">
+                        <ul class="nav nav-tabs card-header-tabs">
+                            <li class="nav-item flex-grow-1"><a class="nav-link active text-white text-center" href="#"><i class="bi bi-person"></i> Name</a></li>
+                            <li class="nav-item flex-grow-1"><a class="nav-link text-white text-center" href="#"><i class="bi bi-telephone"></i> Phone</a></li>
+                            <li class="nav-item flex-grow-1"><a class="nav-link text-white text-center" href="#"><i class="bi bi-house"></i> Address</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <form id="searchForm">
+                            <input type="text" class="form-control mb-2" placeholder="e.g Jhone Smith">
+                            <input type="text" class="form-control mb-2" placeholder="City, State and Zip Code">
+                            <button type="submit" class="btn btn-primary w-100">Free Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mt-5">
+        <h2 class="search-results-header animate-in">2 records found for (345) 345-4544</h2>
+        <p class="report-spam animate-in">Is this phone number spam? <a href="#" class="text-primary">Report Spam</a></p>
+
+        <div id="searchResults">
+            <!-- Search results will be dynamically inserted here -->
+        </div>
+    </main>
+    <footer class="bg-light py-4">
+        <div class="container">
+            <p class="text-center mb-0 animate__animated animate__fadeIn">&copy; 2023 CallerQuest.Info - People Search -
+                Reverse Phone Lookup - Address Lookup</p>
+            <p class="text-center mt-2">
+                <a href="#" class="footer-link mx-2">About</a>
+                <a href="#" class="footer-link mx-2">Help</a>
+                <a href="#" class="footer-link mx-2">Terms</a>
+                <a href="#" class="footer-link mx-2">Privacy Policy</a>
+                <a href="#" class="footer-link mx-2">Contact</a>
+            </p>
+            <p class="text-center mt-2">
+                <a href="mailto:support@callerquest.info" class="footer-link">Support @callerquest.info</a>
+            </p>
+            <p class="text-center mt-2">
+                <a href="#" class="footer-link">Do not Sell My Personal Information</a>
+            </p>
+            <p class="text-center small mt-3 animate__animated animate__fadeIn animate__delay-1s">CallerQuest.Info is
+                not a Consumer Reporting Agency (CRA) as defined by the Fair Reporting Act (FCRA). This site can't be
+                used for employment, credit or tenant screening, or any related purpose</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="search-results.js"></script>
+</body>
+
+</html>

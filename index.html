@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caller Quest - Revolutionizing Telephony and Big Data Access</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="bg-image py-5 position-relative">
+        <div class="container">
+            <h1 class="text-center mb-4 text-white"><img src="Images/logo.png" alt="Caller Quest" height="40"></h1>
+        </div>
+    </header>
+
+    <section class="form-section position-relative">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card header-card shadow">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="searchTabs" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="name-tab" data-bs-toggle="tab"
+                                        data-bs-target="#name" type="button" role="tab" aria-controls="name"
+                                        aria-selected="true">
+                                        <i class="bi bi-person"></i> Name
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="phone-tab" data-bs-toggle="tab" data-bs-target="#phone"
+                                        type="button" role="tab" aria-controls="phone" aria-selected="false">
+                                        <i class="bi bi-telephone"></i> Phone
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="address-tab" data-bs-toggle="tab"
+                                        data-bs-target="#address" type="button" role="tab" aria-controls="address"
+                                        aria-selected="false">
+                                        <i class="bi bi-house"></i> Address
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="searchTabContent">
+                                <div class="tab-pane fade show active" id="name" role="tabpanel"
+                                    aria-labelledby="name-tab">
+                                    <form id="nameForm">
+                                        <input type="text" class="form-control mb-3" placeholder="e.g Jhone Smith"
+                                            required>
+                                        <input type="text" class="form-control mb-3"
+                                            placeholder="City, State and Zip Code" required>
+                                        <button type="submit" class="btn btn-primary w-100">Free Search</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="phone" role="tabpanel" aria-labelledby="phone-tab">
+                                    <form id="phoneForm">
+                                        <input type="tel" class="form-control mb-3" placeholder="e.g Phone Number"
+                                            required>
+                                        <button type="submit" class="btn btn-primary w-100">Free Search</button>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="address-tab">
+                                    <form id="addressForm">
+                                        <input type="text" class="form-control mb-3" placeholder="e.g 321, Main street"
+                                            required>
+                                        <input type="text" class="form-control mb-3"
+                                            placeholder="City, State and Zip Code" required>
+                                        <button type="submit" class="btn btn-primary w-100">Free Search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="mt-5">
+        <section class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Revolutionizing Telephony and Big Data Access</h2>
+                <p class="text-center">Welcome to CallerQuest - Pioneering Next-Gen Telephony and Big Data for Everyone.
+                    Unlock the Power of Information at Your Fingertips.</p>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="mb-4">About Us</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>Discover More with CallerQuest.info Our Name Search, Address Lookup, and Reverse Phone Lookup
+                            tools empower you to uncover phone number ownership, reconnect with loved ones, and much
+                            more. CallerQuest.info scours vast databases to provide you with valuable contact details.
+                        </p>
+                        <p>Our people search is absolutely FREE! Plus, our data is consistently updated, encompassing
+                            landline, cell phone, residential, and business numbers, along with address information
+                            spanning the U.S.</p>
+                        <p>What's remarkable is that our people search process is entirely discreet. Your search subject
+                            won't be alerted. Safely and anonymously find people throughout the United States using
+                            CallerQuest.info</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Images/World.png" alt="World Map" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box" onclick="handleFeatureClick('address')">
+                            <i class="bi bi-house-door fs-1 mb-3"></i>
+                            <h3>Address Lookup</h3>
+                            <p class="text-muted">Discover Residents of a Specific Address, Past and Present. Enter a
+                                street address, and uncover both current occupants and historical tenants, spanning a
+                                record of up to 40 years</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box" onclick="handleFeatureClick('phone')">
+                            <i class="bi bi-telephone fs-1 mb-3"></i>
+                            <h3>Reverse Phone Search</h3>
+                            <p class="text-muted">Unlock the Ability to Locate Individuals Starting with Their Phone
+                                Number. Enter a number to instantly retrieve the owner's name and additional contact
+                                details</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-box" onclick="handleFeatureClick('people')">
+                            <i class="bi bi-people fs-1 mb-3"></i>
+                            <h3>People Search</h3>
+                            <p class="text-muted">Verify the Identity of Someone You Know Today, Or Reconnect with a
+                                Former Friend or Associate by Initiating a Name Search on CallerQuest</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <h2 class="mb-4 text-center" style="font-family: 'Montserrat', sans-serif; font-weight: 700;">What You
+                    Get</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4">
+                        <p class="lead" style="font-family: 'Roboto', sans-serif;">CallerQuest.info Searches Through
+                            Vast Databases to Fulfill Your Search Needs. We Conduct Millions of Searches Daily, Adding
+                            Up to Over 100 Million Searches Each Month!</p>
+                        <p class="lead" style="font-family: 'Roboto', sans-serif;">Discover Why People Rely on Us for
+                            Quick and Secure Friend and Family Searches.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <div class="card h-100 feature-card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-search fs-1 mb-3 feature-icon"></i>
+                                        <p class="feature-text">CallerQuest.com Searches Through Vast Databases to
+                                            Fulfill Your Search Needs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="card h-100 feature-card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-currency-dollar fs-1 mb-3 feature-icon"></i>
+                                        <p class="feature-text">Our Mission is to Simplify the Process of Finding People
+                                            for Every Family. Our People Search Service is Completely Free.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="card h-100 feature-card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-phone fs-1 mb-3 feature-icon"></i>
+                                        <p class="feature-text">Discover Who's Calling with Our Reverse Phone Number
+                                            Lookup - Instantaneous and Up-to-Date Results!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="card h-100 feature-card">
+                                    <div class="card-body text-center">
+                                        <i class="bi bi-house fs-1 mb-3 feature-icon"></i>
+                                        <p class="feature-text">Effortlessly Search Any Address for the Most Relevant
+                                            and Current Results. Quick and Easy!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <style>
+
+        </style>
+
+        <section class="bg-primary text-white py-5">
+            <div class="container text-center">
+                <h2 class="mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 2.5rem;">Find People Fast</h2>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 1.1rem;">Swiftly and Securely Explore Our Vast
+                    Database, Housing Millions of Records. Initiate a People Search to Locate an Individual Instantly,
+                    at the Click of a Button.</p>
+                <a href="#" class="btn btn-light btn-lg mt-3 animate-pulse"
+                    onmouseover="this.classList.add('btn-outline-light'); this.classList.remove('btn-light');"
+                    onmouseout="this.classList.add('btn-light'); this.classList.remove('btn-outline-light');">Search now
+                    for free!</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container">
+            <p class="text-center mb-0 animate__animated animate__fadeIn">&copy; 2023 CallerQuest.Info - People Search -
+                Reverse Phone Lookup - Address Lookup</p>
+            <p class="text-center mt-2">
+                <a href="#" class="footer-link mx-2">About</a>
+                <a href="removals.html" class="footer-link mx-2">Help</a>
+                <a href="terms-of-use.html" class="footer-link mx-2">Terms</a>
+                <a href="privacy-policy.html" class="footer-link mx-2">Privacy Policy</a>
+                <a href="#" class="footer-link mx-2">Contact</a>
+            </p>
+            <p class="text-center mt-2">
+                <a href="mailto:support@callerquest.info" class="footer-link">Support @callerquest.info</a>
+            </p>
+            <p class="text-center mt-2">
+                <a href="#" class="footer-link">Do not Sell My Personal Information</a>
+            </p>
+            <p class="text-center small mt-3 animate__animated animate__fadeIn animate__delay-1s">CallerQuest.Info is
+                not a Consumer Reporting Agency (CRA) as defined by the Fair Reporting Act (FCRA). This site can't be
+                used for employment, credit or tenant screening, or any related purpose</p>
+        </div>
+    </footer>
+
+    <style>
+
+    </style>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+
+</html>
