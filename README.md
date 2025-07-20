@@ -39,7 +39,7 @@ The core functionality of this website—performing the actual people search, re
 
 **How to Run Locally (with limitations):**
 
-1. Clone the repository: `git clone https://github.com/your-username/caller-quest.git`
+1. Clone the repository: `https://github.com/abdullahsohail-00/Caller-Quest-Website.git`
 2. Open `index.html` in a web browser.
 
 **Note:**  Because the backend implementation is missing, the search functionality will not work as intended.  You'll see the front-end interface and can interact with the tabs and forms, but submitting a search will not yield any results without a connected backend.
